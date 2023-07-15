@@ -12,7 +12,10 @@ const errorHandler = require('./middlewares/error-handler');
 const { PORT = 4000 } = process.env;
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({
+  origin: 'https://domainname.yatimova.nomoredomains.xyz',
+  credentials: true,
+}));
 
 const limiter = rateLimit({
   max: 100, // limit each IP to 100 request
