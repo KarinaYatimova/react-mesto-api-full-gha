@@ -1,4 +1,4 @@
-export const BASE_URL = "https://domainname.yatimova.nomoredomains.xyz";
+export const BASE_URL = "https://api.domainname.yatimova.nomoredomains.xyz";
 
 const checkResponse = (res) => {
   if (res.ok) {
