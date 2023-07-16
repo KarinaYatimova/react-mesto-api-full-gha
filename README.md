@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.98.228
+IP 158.160.98.228
 
 Frontend https://domainname.yatimova.nomoredomains.xyz,
 
