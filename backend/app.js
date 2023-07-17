@@ -24,8 +24,6 @@ const limiter = rateLimit({
   message: 'Too many request from this IP, please try again after 15 min',
 });
 
-app.use(limiter);
-
 // подключаемся к серверу mongo
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb')
   .then(() => {
@@ -39,6 +37,7 @@ app.get('/crash-test', () => {
 });
 
 app.use(requestLogger); // подключаем логгер запросов
+app.use(limiter);
 app.use(bodyParser.json()); // для собирания JSON-формата
 app.use(routes);
 app.use(helmet());
